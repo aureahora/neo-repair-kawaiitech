@@ -2,8 +2,8 @@
 
 Welcome to the retro tech restoration station! Dust off your old childhood memories in this cozy, juice-packed ASMR cleaning simulator inspired by Super Nintendo and Dendy aesthetics.
 
-* **Play the game on Itch.io:** [https://itch.io]([https://atomicart.itch.io/neo-repair-kawaiitech]
-* **Ludum Dare Entry Page:** [https://ldjam.com]([https://ldjam.com/events/ludum-dare/60/neo-repair-kawaiitech]
+* **Play the game on Itch.io:** [itch.io](https://atomicart.itch.io/neo-repair-kawaiitech)
+* **Ludum Dare Entry Page:** [ldjam.com](https://ldjam.com/events/ludum-dare/60/neo-repair-kawaiitech)
 
 ---
 
