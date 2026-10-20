@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Neo Repair: Kawaiitech</title>
+    <style>
+      @font-face {
+        font-family: 'Roboto';
+        src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+      }
+
+      .font-loader {
+        font-family: 'Roboto';
+        position: absolute;
+        visibility: hidden;
+        left: -9999px;
+      }
+
+      /* ВАРИАНТ А: Сбрасываем и принудительно центрируем body */
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: #1e1e22 !important;
+        overflow: hidden !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      /* ВАРИАНТ Б: Абсолютный слой с высшим приоритетом (!important) */
+      /* Вырывает контейнер игры из любого потока и ставит мертво по центру */
+      #gameParent {
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+      }
+
+      /* Защита самого холста Phaser внутри контейнера */
+      #gameParent canvas {
+        margin: 0 auto !important;
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="gameParent"></div>
+
+    <script type="module" src="src/main.js"></script>
+
+    <div class="font-loader">.</div>
+</body>
+</html>
